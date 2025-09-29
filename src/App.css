@@ -1,9 +1,17 @@
-#container {
-  height: 100%;
-  width: 1920px;
+.container {
+  height: 400px;
+  width: 100%;
+  background-color: #5e1111;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #5e1111;
+  flex-direction: column;
+}
+
+#cardContainer {
+  height: 250px;
+  width: 200px;
+  background-color: #b8abab;
+  border-radius: 20px;
+
 }
