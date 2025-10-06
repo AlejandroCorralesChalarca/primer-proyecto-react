@@ -8,10 +8,21 @@
   flex-direction: column;
 }
 
-#cardContainer {
+#containerBox {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.cardContainer {
   height: 250px;
   width: 200px;
   background-color: #b8abab;
   border-radius: 20px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
