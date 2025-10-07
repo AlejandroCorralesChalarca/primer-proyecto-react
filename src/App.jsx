@@ -1,42 +1,22 @@
 import { use, useEffect, useState } from 'react'
-import './App.css'
+import "./App.css"
 import axios from 'axios';
+import Dashboard from './components/dashboard/Dashboard';
+import Login from "./components/Login/Login";
+import { BrowserRouter , Routes , Route } from 'react-router';
 
 function App() {
 
-  const [data, setData] = useState({});
 
-  useEffect(() => {
-
-    axios.get("https://pokeapi.co/api/v2/pokemon")
-      .then((response) => setData(response.data))
-      .catch((err) => console.log(err));
-  },[])
-
-  // useEffect(() => {
-  //   fetch("https://pokeapi.co/api/v2/pokemon")
-  //     .then((response) => response.json())
-  //     .then(json => setData(json))
-  //     .catch(err => console.log(err));
-  // },[])
 
    return (
-     <div className = 'container'>
-      
-       <h1>Llamado de API publica</h1>
 
-       <ul id="containerBox">
-           {
-             data.results.map((item) => (
-               <li className ="cardContainer">
-                 {item.name}
-               </li>
-             ))
-           }
-       </ul> 
-
-
-     </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />}/>
+        <Route path="/dashboard" element={<Dashboard />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
