@@ -1,38 +1,23 @@
-import {Link} from "react-router";
-import { useNavigate } from "react-router";
-import "./Login.css";
-import { useState } from "react";
+import { Link } from 'react-router-dom';
+import './Login.css';
 
-
-function Login({valor}) {
-
-    const navigate = useNavigate();
-
-    const [campo, setCampo] = useState("");
-
-    const validateUser = () => {
-        alert("Hola, tu nombre es: " + campo);
-
-        // campo != "alejo" ? alert("Usuario Incorrecto") : navigate("/dashboard");
-
-        if(campo != "juan"){
-            alert("Usuario Incorrecto");
-        }
-        else{
-            navigate("/dashboard", {state:{nombreUsuario: {campo} }});
-        }
-
-    }
-
-    return(
-        <div id="contenedorLogin">
-            <h1>Bienvenido Al Banco</h1>
-            <input type="text" value={campo} onChange={(e) => setCampo(e.target.value)} className="inputLogin" placeholder="Usuario"/>
-            <input type="text" className="inputLogin" placeholder="Contaseña"/>
-
-            <button id ="buttonStyles" onClick={validateUser}>Iniciar Sesion</button>
-        </div>
-    );
+function Login() {
+  return (
+    <div className="auth-page">
+      <div className="auth-container">
+        <h2>Banca Estebanquito</h2>
+        <p className="auth-subtitle">Inicia sesión para continuar</p>
+        <form className="auth-form">
+          <input type="email" placeholder="Correo electrónico" required />
+          <input type="password" placeholder="Contraseña" required />
+          <button type="submit" className="auth-button">Iniciar Sesión</button>
+        </form>
+        <p className="auth-link">
+          ¿No tienes una cuenta? <Link to="/registro">Regístrate</Link>
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default Login;

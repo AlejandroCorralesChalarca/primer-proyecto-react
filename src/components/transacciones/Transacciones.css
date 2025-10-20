@@ -1,0 +1,42 @@
+.back-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.transaction-form input, .transaction-form select {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.transaction-form input:focus, .transaction-form select:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+
+.action-button {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.action-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.3);
+}

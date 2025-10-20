@@ -1,0 +1,122 @@
+/* Estilos base reutilizables para las páginas internas */
+.page-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  color: var(--color-text);
+}
+
+.logout-button {
+  background: #333;
+  color: var(--color-text);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #444;
+}
+
+.card {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--color-secondary);
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilos específicos del Dashboard */
+.balance-card {
+  text-align: center;
+  border: 1px solid var(--color-primary);
+}
+
+.balance-amount {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 1rem 0;
+}
+
+.account-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--color-text-muted);
+}
+
+.dashboard-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-item {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nav-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(37, 117, 252, 0.25);
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-item.income span:last-child {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.transaction-item.expense span:last-child {
+  color: var(--color-error);
+  font-weight: 600;
+}
