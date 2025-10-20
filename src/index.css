@@ -1,16 +1,15 @@
 :root {
   /* Paleta de Colores */
-  --color-primary: #6a11cb;
-  --color-secondary: #2575fc;
-  --color-background: #121212;
-  --color-surface: #1e1e1e;
-  --color-text: #e0e0e0;
-  --color-text-muted: #a0a0a0;
-  --color-accent: #34e89e;
-  --color-error: #ff6b6b;
+  --color-primary: #af8000;
+  --color-secondary: #944229;
+  --color-background: #dbcc40;
+  --color-surface: #c09e40;
+  --color-text: #57cf7f;
+  --color-text-muted: #038d31;
+  --color-accent: #48ff00;
+  --color-error: #ff5e00;
 
   /* Fuentes */
-  font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   font-weight: 400;
   font-synthesis: none;

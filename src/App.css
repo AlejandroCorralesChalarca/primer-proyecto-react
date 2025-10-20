@@ -4,7 +4,7 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #665c00;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 
 /* Estilos para formularios y contenedores */
 .auth-container, .page-container {
-  background-color: #2f2f2f;
+  background-color: #5f5600;
   padding: 2rem;
   border-radius: 8px;
   max-width: 500px;
@@ -52,7 +52,7 @@ body {
   padding: 0.75rem;
   border-radius: 4px;
   border: 1px solid #555;
-  background-color: #3f3f3f;
+  background-color: #6d6200;
   color: white;
   box-sizing: border-box;
 }
@@ -64,16 +64,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #5e5400;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #89ac2b;
 }
 
 a {
-  color: #646cff;
+  color: #608301;
   text-decoration: none;
 }
 a:hover {
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .card {
-  background-color: #3a3a3a;
+  background-color: #645a03;
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 1rem;

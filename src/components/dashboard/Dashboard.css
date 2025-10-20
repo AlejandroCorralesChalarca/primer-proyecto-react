@@ -20,7 +20,7 @@
 }
 
 .logout-button {
-  background: #333;
+  background: #756a00;
   color: var(--color-text);
   padding: 0.6rem 1rem;
   border-radius: 8px;
@@ -30,7 +30,7 @@
 }
 
 .logout-button:hover {
-  background-color: #444;
+  background-color: #685d00;
 }
 
 .card {
@@ -91,7 +91,7 @@
 
 .nav-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(37, 117, 252, 0.25);
+  box-shadow: 0 10px 20px rgba(110, 89, 29, 0.25);
 }
 
 .transaction-list {

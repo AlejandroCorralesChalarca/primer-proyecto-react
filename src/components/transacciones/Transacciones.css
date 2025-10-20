@@ -13,8 +13,8 @@
 .transaction-form input, .transaction-form select {
   padding: 1rem;
   border-radius: 8px;
-  border: 1px solid #444;
-  background-color: #2a2a2a;
+  border: 1px solid #a8592c;
+  background-color: #6d6200;
   color: var(--color-text);
   font-size: 1rem;
 }
@@ -38,5 +38,5 @@
 
 .action-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.3);
+  box-shadow: 0 8px 20px rgba(99, 79, 23, 0.3);
 }
